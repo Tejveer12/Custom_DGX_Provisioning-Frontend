@@ -1,0 +1,6 @@
+streamlit==1.24.0
+pybase64==1.2.3
+#jsonlib==1.6.1
+pickle5
+uuid==1.30
+regex==2023.6.3
