@@ -9,4 +9,4 @@ We have used Streamlit which is an open-source app framework in python language.
 
 ## Run Frontend
 In order to interact with frontend run the command
-  > streamlit Custom_DGX_Provisioning.py
+  > streamlit run Custom_DGX_Provisioning.py
