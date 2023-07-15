@@ -265,39 +265,3 @@ if button1:
                                 #save_values()
                                 #flag=1
 #flag=0
-=======
-    res12=Validate_Entry(Namespace,"Namespace")
-    if res1 and res12:
-        res2=Validate(Environment,"Environment name")
-        res22=Validate_Entry(Environment,"Environment name")
-        if res2 and res22:
-            res3=Validate(Target,"Target")
-            res32=Validate_range(Target,"Target")
-            if res3 and res32:
-                st.success("Successfully Completed")
-                output=r'''THE DETAILS ARE 
-1. DGX PORT FOR SSH ACCESS:31441
-2. DGX PORT FOR APPLICATION ACCESS:31345
-3. DGX PORT FOR JUPYTER ACCESS: 31532
-4. SERVER PORT TO DEPLOY APPLICATION:6709
- 
-Local IP Address Of Server 192.168.12.1'''
-                st.success(output)
-                col1, col2 = st.columns([1,10])
-
-                with col1:
-                    Guide='Data/Exp1.pdf'
-                    with open(Guide, 'rb') as f:
-                        s = f.read()
-                    download_button_str = download_button(s, Guide, 'Download Guide')
-                    st.markdown(download_button_str, unsafe_allow_html=True)
-
-
-                with col2:
-                    Script='Data/Exp1.pdf'
-                    with open(Script, 'rb') as f:
-                        s = f.read()
-                    download_button_str = download_button(s, Script, 'Download Script')
-                    st.markdown(download_button_str, unsafe_allow_html=True)
-
->>>>>>> 6db5cc7ca6654ffbd1fc66b84b714abc45109f2e
